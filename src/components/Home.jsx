@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import heroImage from "../assets/heroImage.jpg";
+import heroImage from "../assets/heroImage.png";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { Typewriter } from "react-simple-typewriter";
