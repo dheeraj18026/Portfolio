@@ -1,6 +1,7 @@
 import Home from "./components/Home";
-import Education from "./components/Education";
 import About from "./components/About"
+import Education from "./components/Education";
+import Skills from "./components/Skills"
 
 import SocialLinks from "./components/SocialLinks";
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Home />
       <About />
       <Education />
+      <Skills />
       <SocialLinks />
     </div>
   );
