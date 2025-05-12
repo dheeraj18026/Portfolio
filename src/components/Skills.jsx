@@ -20,9 +20,9 @@ import mysql_img from "../assets/Skills/mysql.png";
 import mongodb_img from "../assets/Skills/mongodb.png";
 
 import clickup_img from "../assets/Skills/clickup.png";
-import git_img from "../assets/Skills/git.png"
+import git_img from "../assets/Skills/git.png";
 import github_img from "../assets/Skills/github.png";
-import gitlab_img from "../assets/Skills/gitlab.png"
+import gitlab_img from "../assets/Skills/gitlab.png";
 
 const Skills = () => {
   // Categorize the tech stack
@@ -95,7 +95,7 @@ const Skills = () => {
       img_src: jquery_img,
       skill_title: "JQuery",
       style: "shadow-lime-600",
-    }
+    },
   ];
 
   const databases = [
@@ -156,15 +156,15 @@ const Skills = () => {
         variants={
           skill_id % 3 === 1
             ? {
-              hidden: { opacity: 0, x: -50 },
-              visible: { opacity: 1, x: 0 },
-            }
+                hidden: { opacity: 0, x: -50 },
+                visible: { opacity: 1, x: 0 },
+              }
             : skill_id % 3 === 2
-              ? {
+            ? {
                 hidden: { opacity: 0, y: 50 },
                 visible: { opacity: 1, y: 0 },
               }
-              : {
+            : {
                 hidden: { opacity: 0, x: 50 },
                 visible: { opacity: 1, x: 0 },
               }
@@ -184,7 +184,10 @@ const Skills = () => {
       name="skills"
       className="bg-gradient-to-b from-black to-gray-800 w-full pt-16"
     >
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white" ref={ref}>
+      <div
+        className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white"
+        ref={ref}
+      >
         <div>
           <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
             Skills
@@ -219,7 +222,7 @@ const Skills = () => {
         {/* Developer Tools */}
         <div className="my-8">
           <p className="text-2xl font-semibold">Developer Tools</p>
-          <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-8 text-center py-8 px-12 sm:px-0" >
+          <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-8 text-center py-8 px-12 sm:px-0">
             {renderTechs(developerTools)}
           </div>
         </div>
